@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Makan Lesehan 88 — Warung Nasi, Kopi & Teh Buka 24 Jam di Patean Kendal</title>
+    <meta name="description" content="Rumah Makan Lesehan 88 di Sidokumpul, Patean, Kendal. Buka 24 jam setiap hari. Sajikan makanan cepat saji, sarapan, makan siang, makan malam, serta kopi dan pilihan teh enak. Parkir gratis, ramah anak, hanya tunai.">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration: Warm Palette & Fonts -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        cream: '#FAF7F2',
+                        espresso: '#1C1917',
+                        terracotta: {
+                            50: '#FFF7ED',
+                            100: '#FFEDD5',
+                            500: '#D97706',
+                            600: '#B45309',
+                            700: '#9A3412',
+                        },
+                        forest: {
+                            50: '#ECFDF5',
+                            700: '#047857',
+                            800: '#065F46',
+                            900: '#064E3B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Local SEO Structured Data (Schema.org Restaurant) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Rumah Makan Lesehan 88",
+      "servesCuisine": ["Indonesian", "Coffee", "Tea"],
+      "telephone": "+6281317567155",
+      "paymentAccepted": "Cash",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pesanggrahan, Sidokumpul, Kec. Patean",
+        "addressLocality": "Kabupaten Kendal",
+        "addressRegion": "Jawa Tengah",
+        "postalCode": "51364",
+        "addressCountry": "ID"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "3"
+      }
+    }
+    </script>
+</head>
+<body class="bg-cream text-stone-800 dark:bg-stone-950 dark:text-stone-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
+
+    <!-- ==================== 1. STICKY NAVBAR ==================== -->
+    <header class="sticky top-0 z-40 bg-cream/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-200/80 dark:border-stone-800 transition-colors">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Brand Logo -->
+                <a href="#beranda" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-forest-800 dark:bg-amber-600 text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                        <span class="font-serif font-bold text-lg tracking-tight">88</span>
+                    </div>
+                    <div class="leading-tight">
+                        <span class="block font-serif font-bold text-base sm:text-lg text-stone-900 dark:text-stone-50">Lesehan 88</span>
+                        <span class="block text-[11px] font-medium text-forest-700 dark:text-amber-400 tracking-wide uppercase">Buka 24 Jam • Patean</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-stone-600 dark:text-stone-300">
+                    <a href="#beranda" class="hover:text-forest-800 dark:hover:text-amber-400 transition-colors">Beranda</a>
+                    <a href="#menu" class="hover:text-forest-800 dark:hover:text-amber-400 transition-colors">Menu</a>
+                    <a href="#fasilitas" class="hover:text-forest-800 dark:hover:text-amber-400 transition-colors">Fasilitas</a>
+                    <a href="#reservasi" class="hover:text-forest-800 dark:hover:text-amber-400 transition-colors">Reservasi</a>
+                    <a href="#lokasi" class="hover:text-forest-800 dark:hover:text-amber-400 transition-colors">Lokasi</a>
+                </nav>
+
+                <!-- Desktop Actions: Theme Toggle & WhatsApp CTA -->
+                <div class="hidden md:flex items-center gap-3">
+                    <button id="themeToggleDesktop" type="button" aria-label="Ganti Tema Terang atau Gelap" class="p-2.5 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-amber-400 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                        <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
+                        <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+                    </button>
+                    <a href="https://wa.me/6281317567155?text=Halo%20Rumah%20Makan%20Lesehan%2088%2C%20saya%20ingin%20bertanya%20tentang%20menu%20dan%20tempat." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 dark:bg-amber-600 dark:hover:bg-amber-500 text-white text-sm font-semibold shadow-sm transition-all">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Controls: Theme Toggle & Hamburger -->
+                <div class="flex md:hidden items-center gap-2">
+                    <button id="themeToggleMobile" type="button" aria-label="Ganti Tema Terang atau Gelap" class="p-2.5 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-amber-400">
+                        <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                        <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    </button>
+                    <button id="mobileMenuBtn" type="button" aria-label="Buka Menu Navigasi" class="p-2.5 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-100">
+                        <i data-lucide="menu" class="w-5 h-5" id="menuIconOpen"></i>
+                        <i data-lucide="x" class="w-5 h-5 hidden" id="menuIconClose"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 px-4 pt-3 pb-5 space-y-2 shadow-lg">
+            <a href="#beranda" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800">Beranda</a>
+            <a href="#menu" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800">Daftar Menu</a>
+            <a href="#fasilitas" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800">Fasilitas & Suasana</a>
+            <a href="#reservasi" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800">Reservasi / Bungkus</a>
+            <a href="#lokasi" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-base font-medium text-stone-700 dark:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800">Lokasi & Kontak</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281317567155?text=Halo%20Rumah%20Makan%20Lesehan%2088%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-forest-800 dark:bg-amber-600 text-white font-semibold">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>Chat WhatsApp (0813-1756-7155)</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="beranda" class="relative overflow-hidden pt-10 pb-14 md:pt-16 md:pb-20">
+        <!-- Subtle decorative background glow -->
+        <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-200/40 dark:bg-amber-900/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-emerald-200/40 dark:bg-emerald-900/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Status & Rating Badge -->
+                    <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 shadow-sm text-xs sm:text-sm font-semibold">
+                        <span class="inline-flex items-center gap-1.5 text-forest-700 dark:text-emerald-400">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            Buka 24 Jam
+                        </span>
+                        <span class="text-stone-300 dark:text-stone-600">•</span>
+                        <span class="inline-flex items-center gap-1 text-amber-600 dark:text-amber-400">
+                            <span>Rating 5,0</span>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <span class="text-stone-500 dark:text-stone-400 font-normal">(Google Maps)</span>
+                        </span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 dark:text-stone-50 leading-tight">
+                        Lesehan Nyaman 24 Jam, Sajian Cepat, <span class="text-terracotta-600 dark:text-amber-400">Kopi & Teh Enak</span> di Patean.
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-base sm:text-lg text-stone-600 dark:text-stone-300 leading-relaxed max-w-2xl">
+                        Singgah kapan saja di <strong>Rumah Makan Lesehan 88</strong>. Tempat makan tenang dan santai untuk sarapan, makan siang cepat, hingga santap malam bersama keluarga, rombongan, atau rehat sendiri saat di perjalanan.
+                    </p>
+
+                    <!-- Primary CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rumah+Makan+Lesehan+88+Pesanggrahan+Sidokumpul+Patean+Kendal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-forest-800 hover:bg-forest-900 dark:bg-amber-600 dark:hover:bg-amber-500 text-white font-semibold shadow-md shadow-forest-900/10 transition-all text-base">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            <span>Rute Google Maps</span>
+                        </a>
+                        <a href="https://wa.me/6281317567155?text=Halo%20Rumah%20Makan%20Lesehan%2088%2C%20saya%20ingin%20tanya%20menu%20atau%20pesan%20bawa%20pulang." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white dark:bg-stone-900 hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-800 dark:text-stone-100 border border-stone-300 dark:border-stone-700 font-semibold transition-all text-base">
+                            <i data-lucide="message-circle" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
+                            <span>Chat WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Micro highlights -->
+                    <div class="flex flex-wrap items-center gap-x-5 gap-y-2 pt-2 text-xs sm:text-sm text-stone-500 dark:text-stone-400">
+                        <span class="inline-flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-forest-700 dark:text-emerald-400"></i> Layanan Pesan di Meja</span>
+                        <span class="inline-flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-forest-700 dark:text-emerald-400"></i> Parkir Gratis</span>
+                        <span class="inline-flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-forest-700 dark:text-emerald-400"></i> Ramah Anak</span>
+                    </div>
+                </div>
+
+                <!-- Hero Right Visual Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden shadow-xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900">
+                        <img
+                            src="https://placehold.co/800x640/2C4A3E/FAF7F2?text=Suasana+Lesehan+88+%26+Sajian+Hangat"
+                            alt="Suasana Rumah Makan Lesehan 88 Patean Kendal"
+                            onerror="this.src='https://placehold.co/800x640/78350F/FFFBEB?text=Rumah+Makan+Lesehan+88'"
+                            class="w-full h-64 sm:h-80 object-cover"
+                        >
+                        <!-- Overlay info card -->
+                        <div class="p-5 sm:p-6 bg-white dark:bg-stone-900">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-wider text-terracotta-600 dark:text-amber-400">Warung Nasi & Lesehan</p>
+                                    <h2 class="font-serif text-xl font-bold text-stone-900 dark:text-stone-50 mt-0.5">Rumah Makan Lesehan 88</h2>
+                                    <p class="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-1">Sidokumpul, Kec. Patean, Kab. Kendal</p>
+                                </div>
+                                <div class="shrink-0 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/60 rounded-2xl px-3 py-2 text-center">
+                                    <div class="text-lg font-bold text-amber-700 dark:text-amber-400 leading-none">5,0</div>
+                                    <div class="text-[10px] text-stone-600 dark:text-stone-400 mt-0.5">3 ulasan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. QUICK FACTS STRIP ==================== -->
+    <section aria-label="Informasi Penting Operasional" class="pb-14 md:pb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Fact 1: 24 Jam -->
+                <div class="rounded-2xl p-5 bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 shadow-sm flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-forest-700 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                        <i data-lucide="clock" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 dark:text-stone-50 text-sm sm:text-base">Buka 24 Jam</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 mt-1">Melayani sarapan, makan siang, hingga makan malam setiap hari.</p>
+                    </div>
+                </div>
+
+                <!-- Fact 2: Hanya Tunai (Highlighted cleanly so visitors don't miss it) -->
+                <div class="rounded-2xl p-5 bg-amber-50/90 dark:bg-amber-950/40 border-2 border-amber-300 dark:border-amber-700/70 shadow-sm flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+                        <i data-lucide="banknote" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1.5">
+                            <h3 class="font-bold text-amber-950 dark:text-amber-300 text-sm sm:text-base">Hanya Tunai</h3>
+                            <span class="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded bg-amber-200 dark:bg-amber-900 text-amber-900 dark:text-amber-200">Penting</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-amber-900/80 dark:text-amber-200/80 mt-1">Mohon siapkan uang tunai (<em>Cash Only</em>) saat berkunjung.</p>
+                    </div>
+                </div>
+
+                <!-- Fact 3: Parkir Gratis & Toilet -->
+                <div class="rounded-2xl p-5 bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 shadow-sm flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 flex items-center justify-center shrink-0">
+                        <i data-lucide="car" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 dark:text-stone-50 text-sm sm:text-base">Parkir Gratis & Toilet</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 mt-1">Tersedia tempat parkir gratis, parkir di jalan gratis, dan toilet.</p>
+                    </div>
+                </div>
+
+                <!-- Fact 4: Dine-in & Takeaway (No Delivery) -->
+                <div class="rounded-2xl p-5 bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 shadow-sm flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-terracotta-50 dark:bg-orange-950/50 text-terracotta-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 dark:text-stone-50 text-sm sm:text-base">Dine-in & Takeaway</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 mt-1">Pesan di meja & bawa pulang. <span class="font-semibold text-stone-800 dark:text-stone-200">Belum melayani pesan antar.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. INTERACTIVE MENU SECTION ==================== -->
+    <section id="menu" class="py-14 md:py-20 bg-white dark:bg-stone-900/60 border-y border-stone-200/80 dark:border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600 dark:text-amber-400">Pilihan Hidangan & Minuman</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-50 mt-1">Daftar Menu Lesehan 88</h2>
+                    <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 mt-2 max-w-2xl">
+                        Sajian masakan rumahan cepat saji untuk sarapan hingga malam hari, ditemani kopi mantap dan pilihan teh hangat yang jadi favorit pelanggan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap gap-2.5 mb-8" role="tablist" aria-label="Filter Kategori Menu">
+                <button type="button" data-filter="semua" class="menu-tab active px-4 py-2.5 rounded-xl text-sm font-semibold transition-all bg-forest-800 text-white dark:bg-amber-600 shadow-sm">
+                    Semua Menu
+                </button>
+                <button type="button" data-filter="kopi-teh" class="menu-tab px-4 py-2.5 rounded-xl text-sm font-semibold transition-all bg-amber-50 dark:bg-amber-950/50 text-amber-900 dark:text-amber-300 border border-amber-300 dark:border-amber-700/70 hover:bg-amber-100 dark:hover:bg-amber-900/50 inline-flex items-center gap-2">
+                    <i data-lucide="coffee" class="w-4 h-4"></i>
+                    <span>Kopi & Teh Spesial</span>
+                    <span class="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded-md bg-amber-500 text-white">Unggulan</span>
+                </button>
+                <button type="button" data-filter="makanan" class="menu-tab px-4 py-2.5 rounded-xl text-sm font-semibold transition-all bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700">
+                    Makanan & Lauk
+                </button>
+                <button type="button" data-filter="paket" class="menu-tab px-4 py-2.5 rounded-xl text-sm font-semibold transition-all bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700">
+                    Paket Hemat
+                </button>
+            </div>
+
+            <!-- Menu Cards Grid (Populated via JavaScript) -->
+            <div id="menuGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Dynamic Menu Items -->
+            </div>
+
+            <!-- Illustrative Note + Cash Only Reminder -->
+            <div class="mt-8 p-4 rounded-2xl bg-stone-100/90 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm text-stone-600 dark:text-stone-300">
+                <div class="flex items-start sm:items-center gap-2.5">
+                    <i data-lucide="info" class="w-4 h-4 text-terracotta-600 dark:text-amber-400 shrink-0 mt-0.5 sm:mt-0"></i>
+                    <span><strong>Catatan Prototipe:</strong> Daftar menu dan harga di atas bersifat ilustratif dan siap disesuaikan dengan menu asli Rumah Makan Lesehan 88.</span>
+                </div>
+                <span class="inline-flex items-center gap-1.5 font-semibold text-amber-800 dark:text-amber-300 shrink-0">
+                    <i data-lucide="banknote" class="w-4 h-4"></i> Pembayaran Hanya Tunai
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. FASILITAS & SUASANA SECTION ==================== -->
+    <section id="fasilitas" class="py-14 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-forest-700 dark:text-emerald-400">Kenapa Singgah di Sini?</span>
+                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-50 mt-1">Suasana & Fasilitas Nyaman</h2>
+                <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 mt-2">
+                    Dirancang agar setiap pengunjung—baik yang makan siang cepat, rehat malam, maupun berkumpul bersama keluarga—merasa betah.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Feature 1 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-forest-700 dark:text-emerald-400 flex items-center justify-center mb-4">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900 dark:text-stone-50">Nyaman, Santai & Tenang</h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mt-1.5 leading-relaxed">
+                        Konsep lesehan yang bersih dan tidak bising, cocok untuk melepas penat sambil bersantap dengan tenang.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center mb-4">
+                        <i data-lucide="coffee" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900 dark:text-stone-50">Kopi & Pilihan Teh Enak</h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mt-1.5 leading-relaxed">
+                        Bukan sekadar warung nasi—nikmati racikan kopi hangat dan pilihan teh mantap yang tersedia 24 jam penuh.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-orange-50 dark:bg-orange-950/60 text-terracotta-600 dark:text-orange-400 flex items-center justify-center mb-4">
+                        <i data-lucide="baby" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900 dark:text-stone-50">Ramah Anak-anak</h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mt-1.5 leading-relaxed">
+                        Area lesehan yang leluasa membuat tempat ini aman dan nyaman untuk keluarga yang membawa buah hati.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 flex items-center justify-center mb-4">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900 dark:text-stone-50">Makan Sendiri & Rombongan</h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mt-1.5 leading-relaxed">
+                        Populer untuk makan siang cepat maupun santap sendiri, sekaligus lega untuk acara kumpul berkelompok.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-forest-700 dark:text-emerald-400 flex items-center justify-center mb-4">
+                        <i data-lucide="utensils" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900 dark:text-stone-50">Sajian Cepat & Pesan di Meja</h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mt-1.5 leading-relaxed">
+                        Duduk santai di lesehan, pesanan langsung dilayani di meja dengan penyajian cepat saji yang hangat.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center mb-4">
+                        <i data-lucide="parking-circle" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900 dark:text-stone-50">Toilet & Parkir Gratis</h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mt-1.5 leading-relaxed">
+                        Dilengkapi toilet bersih, area tempat parkir gratis, serta opsi parkir di pinggir jalan yang juga gratis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. RESERVASI / PESAN BAWA PULANG FORM ==================== -->
+    <section id="reservasi" class="py-14 md:py-20 bg-white dark:bg-stone-900/60 border-y border-stone-200/80 dark:border-stone-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-3xl bg-cream dark:bg-stone-900 border border-stone-200 dark:border-stone-800 p-6 sm:p-8 md:p-10 shadow-sm">
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600 dark:text-amber-400">Tanpa Antre Lama</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900 dark:text-stone-50 mt-1">Reservasi Rombongan / Pesan Bawa Pulang</h2>
+                    <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 mt-1.5">
+                        Isi formulir singkat di bawah ini untuk memesan tempat lesehan rombongan atau menyiapkan pesanan bungkus agar siap saat Anda tiba.
+                    </p>
+                </div>
+
+                <!-- Friendly Cash Only & No Delivery Alert -->
+                <div class="mb-6 p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/50 border border-amber-300 dark:border-amber-700/70 flex items-start gap-3">
+                    <i data-lucide="alert-circle" class="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"></i>
+                    <p class="text-xs sm:text-sm text-amber-950 dark:text-amber-200 leading-relaxed">
+                        <strong>Info:</strong> Pembayaran di lokasi <strong>hanya menerima tunai (Cash Only)</strong> dan saat ini <strong>belum tersedia layanan pesan antar</strong>. Pesanan bungkus diambil langsung di warung.
+                    </p>
+                </div>
+
+                <form id="orderForm" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Nama -->
+                        <div>
+                            <label for="customerName" class="block text-sm font-semibold text-stone-700 dark:text-stone-200 mb-1.5">Nama Anda <span class="text-red-500">*</span></label>
+                            <input type="text" id="customerName" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-forest-700 dark:focus:ring-amber-500 text-sm">
+                        </div>
+
+                        <!-- Jenis Kunjungan -->
+                        <div>
+                            <label for="visitType" class="block text-sm font-semibold text-stone-700 dark:text-stone-200 mb-1.5">Jenis Kunjungan</label>
+                            <select id="visitType" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-forest-700 dark:focus:ring-amber-500 text-sm">
+                                <option value="Makan di Tempat (Lesehan)">Makan di Tempat (Lesehan)</option>
+                                <option value="Bawa Pulang (Takeaway)">Bawa Pulang (Takeaway)</option>
+                            </select>
+                        </div>
+
+                        <!-- Jumlah Orang -->
+                        <div>
+                            <label for="guestCount" class="block text-sm font-semibold text-stone-700 dark:text-stone-200 mb-1.5">Jumlah Orang / Porsi</label>
+                            <input type="number" id="guestCount" min="1" max="100" value="2" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-forest-700 dark:focus:ring-amber-500 text-sm">
+                        </div>
+
+                        <!-- Perkiraan Jam Datang -->
+                        <div>
+                            <label for="arrivalTime" class="block text-sm font-semibold text-stone-700 dark:text-stone-200 mb-1.5">Perkiraan Jam Datang</label>
+                            <input type="time" id="arrivalTime" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-forest-700 dark:focus:ring-amber-500 text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Catatan Pesanan -->
+                    <div>
+                        <label for="orderNotes" class="block text-sm font-semibold text-stone-700 dark:text-stone-200 mb-1.5">Catatan Pesanan / Permintaan Khusus</label>
+                        <textarea id="orderNotes" rows="3" placeholder="Contoh: Pesan 2 Nasi Ayam Goreng, 2 Kopi Tubruk Hitam 88, sambal dipisah..." class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-forest-700 dark:focus:ring-amber-500 text-sm"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+                        <p class="text-xs text-stone-500 dark:text-stone-400">Pesan akan otomatis terformat dan siap dikirim ke WhatsApp 0813-1756-7155.</p>
+                        <button type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-forest-800 hover:bg-forest-900 dark:bg-amber-600 dark:hover:bg-amber-500 text-white font-semibold shadow-md transition-all text-sm sm:text-base">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Lanjutkan ke WhatsApp</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 7. ULASAN & RATING SECTION ==================== -->
+    <section id="ulasan" class="py-14 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-forest-700 dark:text-emerald-400">Kata Pengunjung</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-50 mt-1">Rating Sempurna 5,0 di Google Maps</h2>
+                    <div class="flex items-center gap-2 mt-2.5">
+                        <div class="flex text-amber-500">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <span class="text-sm font-bold text-stone-900 dark:text-stone-100">5,0 / 5,0</span>
+                        <span class="text-sm text-stone-500 dark:text-stone-400">(Berdasarkan 3 ulasan Google)</span>
+                    </div>
+                </div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Rumah+Makan+Lesehan+88+Pesanggrahan+Sidokumpul+Patean+Kendal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-300 dark:border-stone-700 hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-800 dark:text-stone-100 text-sm font-semibold shadow-sm transition-colors self-start md:self-auto">
+                    <i data-lucide="pen-line" class="w-4 h-4 text-amber-600 dark:text-amber-400"></i>
+                    <span>Tulis Ulasan di Google</span>
+                </a>
+            </div>
+
+            <!-- Sample Positive Highlights -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed italic">
+                            "Sangat membantu karena buka 24 jam! Kemarin mampir malam hari pas lewat Patean, suasananya tenang, lesehannya nyaman buat istirahat, dan kopinya enak banget."
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs text-stone-500 dark:text-stone-400">
+                        <span class="font-semibold text-stone-800 dark:text-stone-200">Pengunjung Transit</span>
+                        <span>Highlight • Buka 24 Jam</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed italic">
+                            "Langganan makan siang di sini. Penyajiannya cepat, dilayani langsung di meja, teh hangatnya mantap, dan parkirnya gratis. Cocok buat makan sendiri maupun bareng teman."
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs text-stone-500 dark:text-stone-400">
+                        <span class="font-semibold text-stone-800 dark:text-stone-200">Pekerja Sekitar</span>
+                        <span>Highlight • Makan Siang</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-sm text-stone-700 dark:text-stone-300 leading-relaxed italic">
+                            "Tempatnya santai dan ramah anak-anak. Bawa keluarga makan malam di sini terasa nyaman banget, ada toilet juga. Jangan lupa bawa uang tunai ya."
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs text-stone-500 dark:text-stone-400">
+                        <span class="font-semibold text-stone-800 dark:text-stone-200">Pengunjung Keluarga</span>
+                        <span>Highlight • Ramah Anak</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 8. LOKASI & KONTAK SECTION ==================== -->
+    <section id="lokasi" class="py-14 md:py-20 bg-white dark:bg-stone-900/60 border-t border-stone-200/80 dark:border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600 dark:text-amber-400">Kunjungi Kami</span>
+                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-50 mt-1">Lokasi & Kontak</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                <!-- Left: Google Maps Embed -->
+                <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-700 shadow-sm min-h-[320px] sm:min-h-[400px] bg-stone-100 dark:bg-stone-800">
+                    <iframe
+                        title="Peta Lokasi Rumah Makan Lesehan 88 Patean Kendal"
+                        src="https://maps.google.com/maps?q=Pesanggrahan,%20Sidokumpul,%20Kec.%20Patean,%20Kabupaten%20Kendal,%20Jawa%20Tengah%2051364&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        class="w-full h-full min-h-[320px] sm:min-h-[400px] border-0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Right: Contact & Address Details -->
+                <div class="lg:col-span-5 rounded-3xl bg-cream dark:bg-stone-900 border border-stone-200 dark:border-stone-800 p-6 sm:p-7 flex flex-col justify-between gap-6">
+                    <div class="space-y-5">
+                        <!-- Alamat -->
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-forest-800/10 dark:bg-amber-500/15 text-forest-800 dark:text-amber-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 dark:text-stone-50 text-sm">Alamat Lengkap</h3>
+                                <p id="fullAddressText" class="text-sm text-stone-600 dark:text-stone-300 mt-1 leading-relaxed">
+                                    Pesanggrahan, Sidokumpul, Kec. Patean, Kabupaten Kendal, Jawa Tengah 51364
+                                </p>
+                                <p class="text-xs font-mono text-stone-500 dark:text-stone-400 mt-1.5">
+                                    Plus Code: <span class="font-semibold text-stone-700 dark:text-stone-200">W46Q+M9 Sidokumpul, Kendal</span>
+                                </p>
+                                <button type="button" id="copyAddressBtn" class="mt-2.5 inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-white dark:bg-stone-800 border border-stone-300 dark:border-stone-700 hover:bg-stone-100 dark:hover:bg-stone-700 text-stone-700 dark:text-stone-200 transition-colors">
+                                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                                    <span>Salin Alamat</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Jam Buka -->
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-forest-800/10 dark:bg-amber-500/15 text-forest-800 dark:text-amber-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="clock" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 dark:text-stone-50 text-sm">Jam Operasional</h3>
+                                <p class="text-sm text-forest-700 dark:text-emerald-400 font-semibold mt-1">Buka 24 Jam (Senin – Minggu)</p>
+                                <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">Sarapan, Makan Siang, Makan Malam</p>
+                            </div>
+                        </div>
+
+                        <!-- Telepon / WhatsApp -->
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-forest-800/10 dark:bg-amber-500/15 text-forest-800 dark:text-amber-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 dark:text-stone-50 text-sm">Telepon & WhatsApp</h3>
+                                <a href="tel:081317567155" class="inline-block text-base font-bold text-stone-900 dark:text-stone-100 hover:text-forest-700 dark:hover:text-amber-400 mt-0.5 transition-colors">
+                                    0813-1756-7155
+                                </a>
+                                <p class="text-xs text-stone-500 dark:text-stone-400">Ketuk nomor untuk menelepon langsung</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-stone-200 dark:border-stone-800">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rumah+Makan+Lesehan+88+Pesanggrahan+Sidokumpul+Patean+Kendal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-forest-800 hover:bg-forest-900 dark:bg-amber-600 dark:hover:bg-amber-500 text-white text-sm font-semibold transition-colors">
+                            <i data-lucide="navigation" class="w-4 h-4"></i>
+                            <span>Buka di Maps</span>
+                        </a>
+                        <a href="tel:081317567155" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white dark:bg-stone-800 border border-stone-300 dark:border-stone-700 hover:bg-stone-100 dark:hover:bg-stone-700 text-stone-800 dark:text-stone-100 text-sm font-semibold transition-colors">
+                            <i data-lucide="phone-call" class="w-4 h-4"></i>
+                            <span>Telepon</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 9. FOOTER ==================== -->
+    <footer class="bg-stone-900 dark:bg-black text-stone-300 py-10 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div>
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-8 h-8 rounded-lg bg-amber-600 text-white font-serif font-bold flex items-center justify-center text-sm">88</span>
+                        <span class="font-serif text-lg font-bold text-white">Rumah Makan Lesehan 88</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-stone-400 mt-2 max-w-md">
+                        Pesanggrahan, Sidokumpul, Kec. Patean, Kabupaten Kendal, Jawa Tengah 51364.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-3 text-xs">
+                    <span class="px-3 py-1.5 rounded-full bg-stone-800 text-emerald-400 font-semibold">Buka 24 Jam Setiap Hari</span>
+                    <span class="px-3 py-1.5 rounded-full bg-stone-800 text-amber-400 font-semibold">Pembayaran Hanya Tunai</span>
+                    <span class="px-3 py-1.5 rounded-full bg-stone-800 text-stone-300">Makan di Tempat & Bawa Pulang</span>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-500">
+                <p>&copy; <span id="currentYear"></span> Rumah Makan Lesehan 88. Seluruh hak cipta dilindungi.</p>
+                <p>Prototipe Website Resmi — PRD v1.1</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a href="https://wa.me/6281317567155?text=Halo%20Rumah%20Makan%20Lesehan%2088%2C%20saya%20mau%20tanya%20tentang%20menu%20atau%20reservasi." target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Rumah Makan Lesehan 88" class="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2.5 px-4 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow-lg shadow-emerald-900/30 hover:scale-105 transition-all">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span class="hidden sm:inline text-sm">Chat WhatsApp</span>
+    </a>
+
+    <!-- ==================== WHATSAPP PREVIEW MODAL ==================== -->
+    <div id="waModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="waModalTitle">
+        <div class="w-full max-w-md rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 p-6 shadow-2xl space-y-4">
+            <div class="flex items-center justify-between">
+                <h3 id="waModalTitle" class="font-serif text-xl font-bold text-stone-900 dark:text-stone-50">Pratinjau Pesan WhatsApp</h3>
+                <button type="button" id="closeModalBtn" aria-label="Tutup" class="p-1.5 rounded-lg text-stone-500 hover:bg-stone-100 dark:hover:bg-stone-800">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <p class="text-xs text-stone-500 dark:text-stone-400">Periksa ringkasan pesanan Anda sebelum dikirim ke WhatsApp Rumah Makan Lesehan 88:</p>
+            <pre id="waPreviewText" class="p-4 rounded-2xl bg-stone-100 dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-xs sm:text-sm text-stone-800 dark:text-stone-200 whitespace-pre-wrap font-sans leading-relaxed max-h-60 overflow-y-auto"></pre>
+            <div class="flex flex-col sm:flex-row gap-2.5 pt-2">
+                <a id="waDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition-colors">
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <span>Kirim via WhatsApp</span>
+                </a>
+                <button type="button" id="copyWaMessageBtn" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-700 text-stone-800 dark:text-stone-100 font-semibold text-sm transition-colors">
+                    <i data-lucide="copy" class="w-4 h-4"></i>
+                    <span>Salin</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toast" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 hidden items-center gap-2.5 px-4 py-3 rounded-2xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 text-xs sm:text-sm font-medium shadow-xl">
+        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 dark:text-emerald-600 shrink-0"></i>
+        <span id="toastMessage">Berhasil!</span>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Initialize Lucide Icons safely
+            try {
+                if (window.lucide) {
+                    lucide.createIcons();
+                }
+            } catch (err) {
+                console.error('Gagal memuat ikon Lucide:', err);
+            }
+
+            // Set dynamic copyright year
+            const yearEl = document.getElementById('currentYear');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            // 2. Light / Dark Mode Toggle (Supports system preference & manual switch)
+            const htmlEl = document.documentElement;
+            const themeButtons = [
+                document.getElementById('themeToggleDesktop'),
+                document.getElementById('themeToggleMobile')
+            ];
+
+            function initTheme() {
+                try {
+                    const savedTheme = localStorage.getItem('lesehan88-theme');
+                    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                        htmlEl.classList.add('dark');
+                    } else {
+                        htmlEl.classList.remove('dark');
+                    }
+                } catch (e) {
+                    // Fallback if localStorage is restricted in iframe
+                }
+            }
+
+            function toggleTheme() {
+                const isDark = htmlEl.classList.toggle('dark');
+                try {
+                    localStorage.setItem('lesehan88-theme', isDark ? 'dark' : 'light');
+                } catch (e) {}
+                showToast(isDark ? 'Mode gelap aktif — nyaman untuk malam hari.' : 'Mode terang aktif.');
+            }
+
+            initTheme();
+            themeButtons.forEach(btn => {
+                if (btn) btn.addEventListener('click', toggleTheme);
+            });
+
+            // 3. Mobile Navigation Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIconOpen = document.getElementById('menuIconOpen');
+            const menuIconClose = document.getElementById('menuIconClose');
+
+            function closeMobileMenu() {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            }
+
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.toggle('hidden');
+                    menuIconOpen.classList.toggle('hidden', !isHidden);
+                    menuIconClose.classList.toggle('hidden', isHidden);
+                });
+            }
+
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // 4. Toast Notification Helper (Replaces alert())
+            let toastTimer = null;
+            const toastEl = document.getElementById('toast');
+            const toastMessageEl = document.getElementById('toastMessage');
+
+            function showToast(message) {
+                if (!toastEl || !toastMessageEl) return;
+                toastMessageEl.textContent = message;
+                toastEl.classList.remove('hidden');
+                toastEl.classList.add('flex');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => {
+                    toastEl.classList.add('hidden');
+                    toastEl.classList.remove('flex');
+                }, 3200);
+            }
+
+            // 5. Safe Clipboard Copy Helper (Uses execCommand for iframe compatibility)
+            function copyTextToClipboard(text, successMsg) {
+                try {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = text;
+                    textarea.setAttribute('readonly', '');
+                    textarea.style.position = 'fixed';
+                    textarea.style.opacity = '0';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    showToast(successMsg);
+                } catch (err) {
+                    showToast('Gagal menyalin teks. Silakan salin secara manual.');
+                }
+            }
+
+            // Copy Address Button
+            const copyAddressBtn = document.getElementById('copyAddressBtn');
+            if (copyAddressBtn) {
+                copyAddressBtn.addEventListener('click', () => {
+                    const address = 'Rumah Makan Lesehan 88 - Pesanggrahan, Sidokumpul, Kec. Patean, Kabupaten Kendal, Jawa Tengah 51364 (W46Q+M9)';
+                    copyTextToClipboard(address, 'Alamat berhasil disalin!');
+                });
+            }
+
+            // 6. Interactive Menu Data & Filtering
+            const menuItems = [
+                {
+                    id: 1,
+                    name: 'Kopi Tubruk Hitam 88',
+                    category: 'kopi-teh',
+                    categoryLabel: 'Kopi & Teh Spesial',
+                    price: 'Rp 6.000',
+                    desc: 'Racikan kopi hitam hangat beraroma khas, teman setia rehat malam atau pagi hari.',
+                    badge: 'Favorit',
+                    img: 'https://placehold.co/600x400/451A03/FEF3C7?text=Kopi+Tubruk+Hitam+88'
+                },
+                {
+                    id: 2,
+                    name: 'Kopi Susu Gula Aren',
+                    category: 'kopi-teh',
+                    categoryLabel: 'Kopi & Teh Spesial',
+                    price: 'Rp 10.000',
+                    desc: 'Perpaduan kopi mantap, susu creamy, dan manis legit gula aren asli (panas/es).',
+                    badge: 'Unggulan',
+                    img: 'https://placehold.co/600x400/78350F/FFFBEB?text=Kopi+Susu+Gula+Aren'
+                },
+                {
+                    id: 3,
+                    name: 'Teh Poci / Teh Tubruk Hangat',
+                    category: 'kopi-teh',
+                    categoryLabel: 'Kopi & Teh Spesial',
+                    price: 'Rp 5.000',
+                    desc: 'Pilihan teh wangi sepet-manis khas Jawa Tengah, diseduh hangat dan menenangkan.',
+                    badge: 'Favorit',
+                    img: 'https://placehold.co/600x400/9A3412/FFEDD5?text=Teh+Tubruk+Hangat'
+                },
+                {
+                    id: 4,
+                    name: 'Es Teh Manis Jumbo',
+                    category: 'kopi-teh',
+                    categoryLabel: 'Kopi & Teh Spesial',
+                    price: 'Rp 5.000',
+                    desc: 'Segar, pekat, dan porsi lega untuk melepas dahaga saat makan siang.',
+                    badge: '',
+                    img: 'https://placehold.co/600x400/B45309/FFF7ED?text=Es+Teh+Manis+Jumbo'
+                },
+                {
+                    id: 5,
+                    name: 'Nasi Ayam Goreng Kampung',
+                    category: 'makanan',
+                    categoryLabel: 'Makanan & Lauk',
+                    price: 'Rp 22.000',
+                    desc: 'Ayam goreng bumbu ungkep gurih, disajikan hangat dengan sambal terasi segar & lalapan.',
+                    badge: 'Terlaris',
+                    img: 'https://placehold.co/600x400/065F46/ECFDF5?text=Nasi+Ayam+Goreng'
+                },
+                {
+                    id: 6,
+                    name: 'Nasi Lele Penyet Sambal Bawang',
+                    category: 'makanan',
+                    categoryLabel: 'Makanan & Lauk',
+                    price: 'Rp 16.000',
+                    desc: 'Lele goreng garing dipenyet dengan sambal bawang pedas gurih dan nasi putih pulen.',
+                    badge: '',
+                    img: 'https://placehold.co/600x400/047857/ECFDF5?text=Nasi+Lele+Penyet'
+                },
+                {
+                    id: 7,
+                    name: 'Soto Ayam Kuah Bening',
+                    category: 'makanan',
+                    categoryLabel: 'Makanan & Lauk',
+                    price: 'Rp 14.000',
+                    desc: 'Hangat dan segar untuk sarapan maupun makan malam, lengkap dengan suwiran ayam & soun.',
+                    badge: 'Cepat Saji',
+                    img: 'https://placehold.co/600x400/3F6212/F7FEE7?text=Soto+Ayam+Hangat'
+                },
+                {
+                    id: 8,
+                    name: 'Sayur Lodeh & Tahu Tempe',
+                    category: 'makanan',
+                    categoryLabel: 'Makanan & Lauk',
+                    price: 'Rp 12.000',
+                    desc: 'Masakan rumahan klasik dengan kuah santan gurih, tahu-tempe goreng hangat, dan sambal.',
+                    badge: 'Cepat Saji',
+                    img: 'https://placehold.co/600x400/365314/ECFCCB?text=Sayur+Lodeh+Rumahan'
+                },
+                {
+                    id: 9,
+                    name: 'Paket Makan Siang Hemat',
+                    category: 'paket',
+                    categoryLabel: 'Paket Hemat',
+                    price: 'Rp 18.000',
+                    desc: 'Nasi putih + Lauk Ayam/Lele + Tahu/Tempe + Sambal Lalapan + Es Teh / Teh Hangat.',
+                    badge: 'Populer',
+                    img: 'https://placehold.co/600x400/1E3A8A/EFF6FF?text=Paket+Makan+Siang'
+                },
+                {
+                    id: 10,
+                    name: 'Paket Sarapan & Kopi/Teh',
+                    category: 'paket',
+                    categoryLabel: 'Paket Hemat',
+                    price: 'Rp 16.000',
+                    desc: 'Nasi Soto Ayam atau Nasi Rames Lauk Telur + Kopi Tubruk Hitam / Teh Hangat.',
+                    badge: 'Hemat',
+                    img: 'https://placehold.co/600x400/7C2D12/FFEDD5?text=Paket+Sarapan+Hangat'
+                }
+            ];
+
+            const menuGrid = document.getElementById('menuGrid');
+            const filterTabs = document.querySelectorAll('.menu-tab');
+
+            function renderMenu(filter = 'semua') {
+                if (!menuGrid) return;
+                const filtered = filter === 'semua'
+                    ? menuItems
+                    : menuItems.filter(item => item.category === filter);
+
+                menuGrid.innerHTML = filtered.map(item => `
+                    <article class="group rounded-2xl bg-cream dark:bg-stone-900 border border-stone-200 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+                        <div class="relative h-44 overflow-hidden bg-stone-200 dark:bg-stone-800">
+                            <img
+                                src="${item.img}"
+                                alt="${item.name}"
+                                loading="lazy"
+                                onerror="this.src='https://placehold.co/600x400/292524/FAF7F2?text=Menu+Lesehan+88'"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            ${item.badge ? `
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide ${item.category === 'kopi-teh' ? 'bg-amber-500 text-white' : 'bg-forest-800 text-white'} shadow-sm">
+                                    ${item.badge}
+                                </span>
+                            ` : ''}
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between gap-4">
+                            <div>
+                                <div class="flex items-start justify-between gap-2">
+                                    <h3 class="font-bold text-base text-stone-900 dark:text-stone-50 leading-snug">${item.name}</h3>
+                                    <span class="font-bold text-sm sm:text-base text-terracotta-600 dark:text-amber-400 shrink-0">${item.price}</span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 mt-1.5 leading-relaxed">${item.desc}</p>
+                            </div>
+                            <button
+                                type="button"
+                                data-item-name="${item.name}"
+                                class="add-takeaway-btn w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-white dark:bg-stone-800 hover:bg-forest-800 hover:text-white dark:hover:bg-amber-600 dark:hover:text-white border border-stone-200 dark:border-stone-700 text-stone-800 dark:text-stone-200 text-xs sm:text-sm font-semibold transition-colors"
+                            >
+                                <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                                <span>Pesan Bungkus</span>
+                            </button>
+                        </div>
+                    </article>
+                `).join('');
+
+                // Re-render lucide icons for injected cards
+                if (window.lucide) lucide.createIcons();
+
+                // Attach "Pesan Bungkus" click listeners
+                document.querySelectorAll('.add-takeaway-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const itemName = btn.getAttribute('data-item-name');
+                        prefillTakeawayForm(itemName);
+                    });
+                });
+            }
+
+            // Tab click handling
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const selected = tab.getAttribute('data-filter');
+
+                    filterTabs.forEach(t => {
+                        t.classList.remove('bg-forest-800', 'text-white', 'dark:bg-amber-600', 'shadow-sm');
+                        if (t.getAttribute('data-filter') === 'kopi-teh') {
+                            t.classList.add('bg-amber-50', 'dark:bg-amber-950/50', 'text-amber-900', 'dark:text-amber-300', 'border', 'border-amber-300', 'dark:border-amber-700/70');
+                        } else {
+                            t.classList.add('bg-stone-100', 'dark:bg-stone-800', 'text-stone-700', 'dark:text-stone-300');
+                        }
+                    });
+
+                    tab.classList.remove('bg-stone-100', 'dark:bg-stone-800', 'text-stone-700', 'dark:text-stone-300', 'bg-amber-50', 'dark:bg-amber-950/50', 'text-amber-900', 'dark:text-amber-300', 'border', 'border-amber-300', 'dark:border-amber-700/70');
+                    tab.classList.add('bg-forest-800', 'text-white', 'dark:bg-amber-600', 'shadow-sm');
+
+                    renderMenu(selected);
+                });
+            });
+
+            // Initial menu render
+            renderMenu('semua');
+
+            // 7. Prefill Takeaway Form when clicking "Pesan Bungkus"
+            const visitTypeEl = document.getElementById('visitType');
+            const orderNotesEl = document.getElementById('orderNotes');
+            const reservasiSection = document.getElementById('reservasi');
+
+            function prefillTakeawayForm(itemName) {
+                if (visitTypeEl) visitTypeEl.value = 'Bawa Pulang (Takeaway)';
+                if (orderNotesEl) {
+                    const current = orderNotesEl.value.trim();
+                    orderNotesEl.value = current ? `${current}, 1x ${itemName}` : `1x ${itemName}`;
+                }
+                if (reservasiSection) {
+                    reservasiSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                showToast(`"${itemName}" ditambahkan ke formulir Pesan Bawa Pulang.`);
+            }
+
+            // 8. Reservation / Takeaway Form Submission & WhatsApp Modal
+            const orderForm = document.getElementById('orderForm');
+            const waModal = document.getElementById('waModal');
+            const waPreviewText = document.getElementById('waPreviewText');
+            const waDirectLink = document.getElementById('waDirectLink');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const copyWaMessageBtn = document.getElementById('copyWaMessageBtn');
+
+            let latestWaMessage = '';
+
+            function openWaModal(message, url) {
+                latestWaMessage = message;
+                waPreviewText.textContent = message;
+                waDirectLink.href = url;
+                waModal.classList.remove('hidden');
+                waModal.classList.add('flex');
+            }
+
+            function closeWaModal() {
+                waModal.classList.add('hidden');
+                waModal.classList.remove('flex');
+            }
+
+            if (orderForm) {
+                orderForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('customerName').value.trim();
+                    const visitType = visitTypeEl.value;
+                    const guestCount = document.getElementById('guestCount').value || '-';
+                    const arrivalTime = document.getElementById('arrivalTime').value || 'Segera / Fleksibel';
+                    const notes = orderNotesEl.value.trim() || 'Belum ada catatan khusus';
+
+                    if (!name) {
+                        showToast('Mohon isi nama Anda terlebih dahulu.');
+                        return;
+                    }
+
+                    const formattedMessage =
+`Halo Rumah Makan Lesehan 88,
+Saya ingin konfirmasi *${visitType}*:
+
+• Nama: ${name}
+• Jumlah Orang/Porsi: ${guestCount}
+• Perkiraan Jam Datang: ${arrivalTime}
+• Catatan Pesanan: ${notes}
+
+(Saya paham pembayaran di lokasi hanya tunai). Terima kasih!`;
+
+                    const waUrl = `https://wa.me/6281317567155?text=${encodeURIComponent(formattedMessage)}`;
+                    openWaModal(formattedMessage, waUrl);
+                });
+            }
+
+            if (closeModalBtn) closeModalBtn.addEventListener('click', closeWaModal);
+            if (waModal) {
+                waModal.addEventListener('click', (e) => {
+                    if (e.target === waModal) closeWaModal();
+                });
+            }
+            if (copyWaMessageBtn) {
+                copyWaMessageBtn.addEventListener('click', () => {
+                    copyTextToClipboard(latestWaMessage, 'Pesan WhatsApp berhasil disalin!');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
